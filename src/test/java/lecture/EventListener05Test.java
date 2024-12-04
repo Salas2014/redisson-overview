@@ -10,11 +10,11 @@ import reactor.test.StepVerifier;
 
 import java.util.concurrent.TimeUnit;
 
-public class EventListener05 extends BaseTest {
+public class EventListener05Test extends BaseTest {
 
     @Test
     public void expiredEvent(){
-        RBucketReactive<Object> bucket = this.redissonReactiveClient.getBucket("user:1:name", StringCodec.INSTANCE);
+        RBucketReactive<Object> bucket = this.client.getBucket("user:1:name", StringCodec.INSTANCE);
         Mono<Void> set = bucket.set("Vladyslav", 2, TimeUnit.SECONDS);
         Mono<Void> get = bucket.get()
                 .doOnNext(System.out::println)
@@ -35,7 +35,7 @@ public class EventListener05 extends BaseTest {
 
     @Test
     public void deletedEvent(){
-        RBucketReactive<Object> bucket = this.redissonReactiveClient.getBucket("user:1:name", StringCodec.INSTANCE);
+        RBucketReactive<Object> bucket = this.client.getBucket("user:1:name", StringCodec.INSTANCE);
         Mono<Void> set = bucket.set("Vladyslav");
         Mono<Void> get = bucket.get()
                 .doOnNext(System.out::println)

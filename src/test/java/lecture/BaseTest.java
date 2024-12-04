@@ -13,16 +13,16 @@ import static org.junit.jupiter.api.TestInstance.Lifecycle.PER_CLASS;
 public abstract class BaseTest {
 
     private final RedissonConfig redissonConfig = new RedissonConfig();
-    protected RedissonReactiveClient redissonReactiveClient;
+    protected RedissonReactiveClient client;
 
     @BeforeAll
     public void setClient() {
-        redissonReactiveClient = redissonConfig.redissonReactiveClient();
+        client = redissonConfig.redissonReactiveClient();
     }
 
     @AfterAll
     public void shutdown(){
-        redissonReactiveClient.shutdown();;
+        client.shutdown();;
     }
 
     @SneakyThrows

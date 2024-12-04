@@ -8,11 +8,11 @@ import reactor.test.StepVerifier;
 
 import java.util.concurrent.TimeUnit;
 
-public class KeyValueTest01 extends BaseTest {
+public class KeyValue02Test extends BaseTest {
 
     @Test
     public void keyValueAccess() {
-        RBucketReactive<Object> bucket = this.redissonReactiveClient.getBucket("user:1:name", StringCodec.INSTANCE);
+        RBucketReactive<Object> bucket = this.client.getBucket("user:1:name", StringCodec.INSTANCE);
         Mono<Void> set = bucket.set("Vladyslav");
 
         Mono<Void> get = bucket.get()
@@ -24,8 +24,8 @@ public class KeyValueTest01 extends BaseTest {
     }
 
     @Test
-    public void keyValueExpery0Access() {
-        RBucketReactive<Object> bucket = this.redissonReactiveClient.getBucket("user:1:name", StringCodec.INSTANCE);
+    public void keyValueExpiryAccess() {
+        RBucketReactive<Object> bucket = this.client.getBucket("user:1:name", StringCodec.INSTANCE);
         Mono<Void> set = bucket.set("Vladyslav", 100, TimeUnit.SECONDS);
 
         Mono<Void> get = bucket.get()
@@ -37,8 +37,8 @@ public class KeyValueTest01 extends BaseTest {
     }
 
     @Test
-    public void keyValueExtendExpery0Access() {
-        RBucketReactive<Object> bucket = this.redissonReactiveClient.getBucket("user:1:name", StringCodec.INSTANCE);
+    public void keyValueExtendExpiry0Access() {
+        RBucketReactive<Object> bucket = this.client.getBucket("user:1:name", StringCodec.INSTANCE);
         Mono<Void> set = bucket.set("Vladyslav", 10, TimeUnit.SECONDS);
 
         Mono<Void> get = bucket.get()

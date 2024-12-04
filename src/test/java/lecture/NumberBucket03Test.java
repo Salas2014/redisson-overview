@@ -8,11 +8,11 @@ import reactor.test.StepVerifier;
 
 import java.time.Duration;
 
-public class NumberBucketTest extends BaseTest {
+public class NumberBucket03Test extends BaseTest {
 
     @Test
     void keyValueIncrease() {
-        RAtomicLongReactive atomicLong = this.redissonReactiveClient.getAtomicLong("user:1:visit");
+        RAtomicLongReactive atomicLong = this.client.getAtomicLong("user:1:visit");
 
         Mono<Void> mono = Flux.range(1, 30)
                 .delayElements(Duration.ofSeconds(1))
