@@ -14,7 +14,8 @@ public class CashedHashMap07Test extends BaseTest {
 
     @Test
     public void cashedHashmap() {
-        RMapCacheReactive<Integer, Student> mapCache = this.client.getMapCache("users:cashed", new TypedJsonJacksonCodec(Integer.class, Student.class));
+        RMapCacheReactive<Integer, Student> mapCache = this.client
+                .getMapCache("users:cashed", new TypedJsonJacksonCodec(Integer.class, Student.class));
         Student student2 = new Student("vlad", 33, "London", List.of(1, 23, 4));
         Student student1 = new Student("Sofa", 30, "London", List.of(1, 23, 4));
 
