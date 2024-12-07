@@ -10,7 +10,7 @@ import reactor.test.StepVerifier;
 
 import java.util.concurrent.TimeUnit;
 
-public class EventListener05Test extends BaseTest {
+public class Lec05EventListenerTest extends BaseTest {
 
     @Test
     public void expiredEvent(){

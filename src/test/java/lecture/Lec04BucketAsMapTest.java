@@ -5,7 +5,7 @@ import org.redisson.client.codec.StringCodec;
 import reactor.core.publisher.Mono;
 import reactor.test.StepVerifier;
 
-public class BucketAsMap04Test extends BaseTest {
+public class Lec04BucketAsMapTest extends BaseTest {
 
     @Test
     void asMap() {

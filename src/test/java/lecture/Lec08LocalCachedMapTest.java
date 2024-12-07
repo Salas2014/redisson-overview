@@ -13,7 +13,7 @@ import reactor.core.publisher.Flux;
 import java.time.Duration;
 import java.util.List;
 
-public class LocalCachedMap08Test extends BaseTest {
+public class Lec08LocalCachedMapTest extends BaseTest {
 
     RLocalCachedMap<Integer, Student> students;
 

@@ -5,7 +5,7 @@ import org.redisson.api.RPatternTopicReactive;
 import org.redisson.api.RTopicReactive;
 import org.redisson.client.codec.StringCodec;
 
-public class PubSub11Test extends BaseTest {
+public class Lec11PubSubTest extends BaseTest {
 
     @Test
     public void subscriber1() {

@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.LongStream;
 
-public class ListQueueStack09Test extends BaseTest {
+public class Lec09ListQueueStackTest extends BaseTest {
 
     @Test
     void listTest() {

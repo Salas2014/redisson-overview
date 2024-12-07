@@ -7,7 +7,7 @@ import org.redisson.api.RSetReactive;
 import org.redisson.client.codec.LongCodec;
 import reactor.test.StepVerifier;
 
-public class Batch12Test extends BaseTest {
+public class Lec12BatchTest extends BaseTest {
 
     @Test
     public void butchTest() {

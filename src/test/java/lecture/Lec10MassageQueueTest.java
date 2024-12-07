@@ -10,7 +10,7 @@ import reactor.test.StepVerifier;
 
 import java.time.Duration;
 
-public class MassageQueue10Test extends BaseTest {
+public class Lec10MassageQueueTest extends BaseTest {
 
     private RBlockingQueueReactive<Long> msgQueue;
 

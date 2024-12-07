@@ -8,7 +8,7 @@ import reactor.test.StepVerifier;
 
 import java.time.Duration;
 
-public class NumberBucket03Test extends BaseTest {
+public class Lec03NumberBucketTest extends BaseTest {
 
     @Test
     void keyValueIncrease() {

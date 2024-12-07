@@ -8,7 +8,7 @@ import reactor.test.StepVerifier;
 
 import java.util.concurrent.TimeUnit;
 
-public class KeyValue02Test extends BaseTest {
+public class Lec01KeyValueTest extends BaseTest {
 
     @Test
     public void keyValueAccess() {

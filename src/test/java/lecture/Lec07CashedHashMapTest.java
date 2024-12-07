@@ -10,7 +10,7 @@ import reactor.test.StepVerifier;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class CashedHashMap07Test extends BaseTest {
+public class Lec07CashedHashMapTest extends BaseTest {
 
     @Test
     public void cashedHashmap() {

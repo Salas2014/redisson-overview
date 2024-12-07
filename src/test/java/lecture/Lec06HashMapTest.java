@@ -11,7 +11,7 @@ import reactor.test.StepVerifier;
 import java.util.List;
 import java.util.Map;
 
-public class HashMap06Test extends BaseTest {
+public class Lec06HashMapTest extends BaseTest {
 
     @Test
     public void hashmap() {

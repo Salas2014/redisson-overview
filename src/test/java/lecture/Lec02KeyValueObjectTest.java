@@ -9,7 +9,7 @@ import reactor.test.StepVerifier;
 
 import java.util.List;
 
-public class KeyValueObject02Test extends BaseTest {
+public class Lec02KeyValueObjectTest extends BaseTest {
 
     @Test
     void keyValueObjectTest() {
